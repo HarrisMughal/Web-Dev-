@@ -1,0 +1,23 @@
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.button{
+    width: 100px;
+
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.Display-Books img {
+    height:auto;
+    width: 20%;
+}
