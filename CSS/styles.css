@@ -1,23 +1,76 @@
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     padding: 10px;
-    
 }
 
-.button{
+.button {
     width: 100px;
-
 }
 
-h1{
+h1 {
     text-align: center;
     font-weight: bold;
     font-size: 50px;
 }
 
-.Display-Books img {
-    height:auto;
-    width: 20%;
+div{
+    border: 5px solid black;
 }
+.Display-Books {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.book {
+    width: 40%; 
+    display: flex;
+    align-items: top; 
+    margin-bottom: 10px; 
+}
+
+
+.Display-Books img {
+    height: 450px;
+    width: 500px; 
+    margin-right: 25px; 
+}
+
+.book-desc {
+    width: 100%; 
+}
+
+@media only screen and (max-width: 600px)
+{
+    .book{
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .Display-Books img {
+        margin-bottom: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    .book-desc{
+        width: 80%;
+        height: auto;
+    }
+
+}
+    
+
+
+/*
+.pay{
+    display: block !important;
+    width: auto !important;
+    margin-top: 15px !important;
+}
+*/
+
+
