@@ -15,9 +15,12 @@ h1 {
     font-size: 50px;
 }
 
+/*
+
 div{
     border: 5px solid black;
 }
+    */
 .Display-Books {
     display: flex;
     flex-wrap: wrap; 
