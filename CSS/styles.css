@@ -42,31 +42,36 @@ div{
     width: 100%; 
 }
 
-@media only screen and (max-width: 600px)
-{
-    .book{
-        height: auto;
-        width: 100%;
-        margin-bottom: 30px;
-        align-items: center;
+@media only screen and (max-width: 600px) {
+    .Display-Books {
+        display: flex;
+        flex-direction: column; /* Ensures books stack vertically */
+        align-items: center; /* Centers content */
+    }
+
+    .book {
+        width: 100%; /* Makes books take full width */
+        flex-direction: column; /* Stacks image, text, and button */
+        align-items: center; /* Ensures proper alignment */
+        margin-bottom: 20px; /* Adds spacing between books */
     }
 
     .Display-Books img {
-        margin-bottom: 10px;
-        width: 100%;
-        height: auto;
+        width: 90%; /* Makes image more responsive */
+        height: auto; /* Maintains aspect ratio */
+        margin-bottom: 15px; /* Adds space below image */
     }
 
-    .Display-Books{
-        flex-direction: column;
-        align-items: center;
+    .book-desc {
+        width: 85%; /* Ensures text remains readable */
+        text-align: center; /* Centers text */
     }
 
-    .book-desc{
-        width: 100%;
-        height: auto;
+    .pay {
+        display: block;
+        width: fit-content;
+        margin-top: 15px;
+        padding: 10px 15px;
     }
-
 }
-
 
