@@ -15,12 +15,10 @@ h1 {
     font-size: 50px;
 }
 
-/*
-
 div{
     border: 5px solid black;
 }
-    */
+
 .Display-Books {
     display: flex;
     flex-wrap: wrap; 
@@ -46,35 +44,14 @@ div{
 }
 
 @media only screen and (max-width: 600px) {
-    .Display-Books {
-        display: flex;
-        flex-direction: column; /* Ensures books stack vertically */
-        align-items: center; /* Centers content */
-    }
-
-    .book {
-        width: 100%; /* Makes books take full width */
-        flex-direction: column; /* Stacks image, text, and button */
-        align-items: center; /* Ensures proper alignment */
-        margin-bottom: 20px; /* Adds spacing between books */
-    }
 
     .Display-Books img {
-        width: 90%; /* Makes image more responsive */
-        height: auto; /* Maintains aspect ratio */
-        margin-bottom: 15px; /* Adds space below image */
+        height: 80%;
+        width: 80%; 
+        margin-right: 25px; 
+        grid-template-columns: repeat(1,1fr);
     }
 
-    .book-desc {
-        width: 85%; /* Ensures text remains readable */
-        text-align: center; /* Centers text */
-    }
 
-    .pay {
-        display: block;
-        width: fit-content;
-        margin-top: 15px;
-        padding: 10px 15px;
-    }
 }
 
