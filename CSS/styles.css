@@ -15,10 +15,6 @@ h1 {
     font-size: 50px;
 }
 
-div{
-    border: 5px solid black;
-}
-
 .Display-Books {
     display: flex;
     flex-wrap: wrap; 
@@ -32,6 +28,14 @@ div{
     margin-bottom: 10px; 
 }
 
+.book-desc {
+    font-size: large;
+}
+
+.pay {
+    margin-top: 10px; 
+    align-self: flex-start; 
+}
 
 .Display-Books img {
     height: 450px;
@@ -39,19 +43,27 @@ div{
     margin-right: 25px; 
 }
 
-.book-desc {
-    width: 100%; 
-}
-
-@media only screen and (max-width: 600px) {
-
-    .Display-Books img {
-        height: 80%;
-        width: 80%; 
-        margin-right: 25px; 
-        grid-template-columns: repeat(1,1fr);
+@media only screen and (max-width: 700px) {
+    
+    .book {
+        width: 100%; 
+        display: flex;
+        align-items: top; 
+        margin-top: 10px;
+        margin-bottom: 10px; 
     }
 
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
+    .button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 25%;
+    }
 }
 
