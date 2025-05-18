@@ -15,6 +15,9 @@ h1 {
     font-size: 50px;
 }
 
+.pay{
+    font-size: 20px;
+}
 .Display-Books {
     display: flex;
     flex-wrap: wrap; 
@@ -65,5 +68,26 @@ h1 {
         margin-bottom: 10px;
         width: 25%;
     }
+}
+
+#card, #cvv, #monthSelecter, #yearSelecter {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#check {
+    padding: 10px;
+    border: solid;
+    border-width: thin;
+    cursor: pointer;
+    width: 10%;
+}
+
+#displayCard, #succesPaymentP {
+    font-size: x-large;
+    font: bold;
 }
 
